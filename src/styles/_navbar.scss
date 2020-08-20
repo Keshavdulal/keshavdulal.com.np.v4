@@ -8,7 +8,7 @@
   transition: width 200ms ease;
   overflow: scroll;
 
-  :hover .logo img {
+  :hover .logo svg {
     transform: rotate(-180deg);
   }
 }
@@ -21,14 +21,13 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+  li:last-child {
+    margin-top: auto;
+  }
 }
 
 .nav-item {
   width: 100%;
-
-  :last-child {
-    margin-top: auto;
-  }
 }
 
 .nav-link {
@@ -47,7 +46,7 @@
     color: $textSecondary;
   }
 
-  img {
+  svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
@@ -74,7 +73,7 @@
   letter-spacing: 0.3ch;
   width: 100%;
 
-  img {
+  svg {
     transform: rotate(0deg);
     transition: transform $transitionSpeed;
   }
@@ -114,6 +113,7 @@
 /* large screens */
 @media only screen and (min-width: 600px) {
   .navbar {
+    left: 0;
     top: 0;
     /* same as margin left of main */
     width: 5rem;
@@ -122,19 +122,25 @@
   }
 
   /* expand navbar upon hover & only on large screens*/
-  .navbar:hover {
-    width: 16rem;
+  .navbar {
+    width: $sideBarThickness;
 
     .link-text {
       display: inline;
     }
 
-    .logo img {
+    .logo svg {
       margin-left: 11rem;
     }
 
     .logo-text {
       left: 0px;
+    }
+
+    .nav-item {
+      .media-links {
+        display: flex;
+      }
     }
   }
 }

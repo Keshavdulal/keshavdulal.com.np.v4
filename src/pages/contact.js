@@ -4,14 +4,12 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const IndexPage = () => (
+const Contact = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="experience" />
     <h5>Hi, I am</h5>
-    <h1>Keshav Dulal</h1>
-    <h3>Frontend Software Engineer</h3>
-    <p>I build things for web</p>
+    <div>Contact</div>
   </Layout>
 );
 
-export default IndexPage;
+export default Contact;
