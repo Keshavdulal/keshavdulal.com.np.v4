@@ -1,8 +1,14 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+
+import { socialMedia } from "../variables";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
+  fas,
   faHome,
   faCode,
   faChess,
@@ -10,6 +16,7 @@ import {
   faPaperPlane,
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
+library.add(fas, fab);
 
 const Navbar = ({ siteTitle }) => (
   <nav className="navbar">
@@ -45,30 +52,44 @@ const Navbar = ({ siteTitle }) => (
         </Link>
       </li>
       <li className="nav-item">
-        <Link to="/" className="nav-link">
+        {/* todo make it downloadable in one click */}
+        <Link target="_blank" to="https://bit.ly/3iKDOql" className="nav-link">
           <FontAwesomeIcon icon={faPaperPlane} />
           <span> Resume</span>
         </Link>
       </li>
 
       <li className="nav-item">
-        <ul className="media-links">
-          <Link to="/" className="nav-link">
-            <FontAwesomeIcon icon={faPaperPlane} />
+        <span className="media-links">
+          <Link
+            target="_blank"
+            to={socialMedia.github}
+            className="nav-media-link"
+          >
+            <FontAwesomeIcon icon={["fab", "github"]} />
           </Link>
-          <Link to="/" className="nav-link">
-            <FontAwesomeIcon icon={faPaperPlane} />
+          <Link
+            target="_blank"
+            to={socialMedia.twitter}
+            className="nav-media-link"
+          >
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
           </Link>
-          <Link to="/" className="nav-link">
-            <FontAwesomeIcon icon={faPaperPlane} />
+          <Link
+            target="_blank"
+            to={socialMedia.linkedIn}
+            className="nav-media-link"
+          >
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </Link>
-          <Link to="/" className="nav-link">
-            <FontAwesomeIcon icon={faPaperPlane} />
+          <Link
+            target="_blank"
+            to={socialMedia.stackOverFlow}
+            className="nav-media-link"
+          >
+            <FontAwesomeIcon icon={["fab", "stack-overflow"]} />
           </Link>
-          <Link to="/" className="nav-link">
-            <FontAwesomeIcon icon={faPaperPlane} />
-          </Link>
-        </ul>
+        </span>
       </li>
     </ul>
   </nav>

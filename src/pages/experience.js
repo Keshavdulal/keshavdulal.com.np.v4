@@ -7,8 +7,7 @@ import SEO from "../components/seo";
 const Experience = () => (
   <Layout>
     <SEO title="experience" />
-    <h5>Hi, I am</h5>
-    <div>experience</div>
+    <h1>Experience</h1>
   </Layout>
 );
 
