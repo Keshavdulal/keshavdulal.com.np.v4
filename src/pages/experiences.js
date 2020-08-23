@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 import portfolio from "../portfolio";
 import WorkExperience from "../components/work-experience";
 
-const Experience = () => (
+const Experiences = () => (
   <Layout>
     <SEO title="experience" />
     <h1>Work Experience_</h1>
@@ -17,4 +17,4 @@ const Experience = () => (
   </Layout>
 );
 
-export default Experience;
+export default Experiences;

@@ -1,5 +1,47 @@
 // Add your Portfolio Details here
-module.exports = {
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  fas,
+  faHome,
+  faCode,
+  faChess,
+  faIdCard,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(fas, fab);
+
+// todo migrate navconfig somewhere
+const navConfig = [
+  {
+    name: "Home",
+    faName: faHome,
+    to: "/",
+  },
+  {
+    name: "Experiences",
+    faName: faCode,
+    to: "/experiences",
+  },
+  {
+    name: "Projects",
+    faName: faChess,
+    to: "/projects",
+  },
+  {
+    name: "Contact",
+    faName: faIdCard,
+    to: "/contact",
+  },
+  {
+    name: "Resume",
+    faName: faPaperPlane,
+    to: "https://bit.ly/3iKDOql",
+    targetBlank: true,
+  },
+];
+
+const portfolio = {
   bio: {
     firstName: "Keshav",
     lastName: "Dulal",
@@ -204,11 +246,28 @@ module.exports = {
       ],
     },
   ],
-  socialMedia: {
-    github: "https://github.com/keshavdulal",
-    stackOverFlow: "https://stackoverflow.com/users/3556531/keshavdulal",
-    linkedIn: "https://www.linkedin.com/in/keshavdulal/",
-    twitter: "https://twitter.com/keshavdulal",
-    // instagram:'',
-  },
+  socialMedia: [
+    {
+      name: "github",
+      url: "https://github.com/keshavdulal",
+      faName: ["fab", "github"],
+    },
+    {
+      name: "stackOverFlow",
+      url: "https://stackoverflow.com/users/3556531/keshavdulal",
+      faName: ["fab", "stack-overflow"],
+    },
+    {
+      name: "linkedIn",
+      url: "https://www.linkedin.com/in/keshavdulal/",
+      faName: ["fab", "linkedin"],
+    },
+    {
+      name: "twitter",
+      url: "https://twitter.com/keshavdulal",
+      faName: ["fab", "twitter"],
+    },
+  ],
 };
+
+export { navConfig, portfolio };
