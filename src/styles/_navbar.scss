@@ -9,7 +9,7 @@
   overflow: scroll;
 
   :hover .logo svg {
-    transform: rotate(-180deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -88,11 +88,18 @@
 
 /* small screens */
 @media only screen and (max-width: 600px) {
+  main {
+    /* rem is relative to font-size on root elem. here 16x5=80px */
+    margin-left: 0;
+    padding: 1rem;
+  }
+
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
   }
+
   .logo {
     display: none;
   }
@@ -103,15 +110,28 @@
 
   .nav-link {
     justify-content: center;
+    span {
+      display: none;
+    }
   }
 
   main {
     margin: 0;
   }
+
+  .social-items {
+    display: none;
+  }
 }
 
 /* large screens */
 @media only screen and (min-width: 600px) {
+  main {
+    /* rem is relative to font-size on root elem. here 16x5=80px */
+    margin-left: $sideBarThickness;
+    padding: 1rem;
+  }
+
   .navbar {
     left: 0;
     top: 0;
@@ -130,11 +150,11 @@
     }
 
     .logo svg {
-      margin-left: 11rem;
+      // margin-left: 11rem;
     }
 
     .logo-text {
-      left: 0px;
+      // left: 0px;
     }
 
     .nav-item {

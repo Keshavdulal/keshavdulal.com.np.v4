@@ -2,6 +2,7 @@
 @import "./navbar";
 @import "./theme";
 @import "./scrollbar";
+@import "./button";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
@@ -18,10 +19,4 @@ body {
 a {
   color: currentColor;
   text-decoration: none;
-}
-
-main {
-  /* rem is relative to font-size on root elem. here 16x5=80px */
-  margin-left: $sideBarThickness;
-  padding: 1rem;
 }
