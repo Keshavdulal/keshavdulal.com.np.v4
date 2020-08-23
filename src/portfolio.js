@@ -5,6 +5,11 @@ module.exports = {
     lastName: "Dulal",
     professionTitle: "Frontend Software Engineer",
     location: "Kathmandu, Nepal",
+    slogan: "Building Scalable Technology for upcoming Generations",
+    description: [
+      "I am a Frontend Software Engineer who enjoys building things for web. I specialize in building exceptional websites, applications and everything in between.",
+      "I am experienced in building React & Node JS Applications for American Health Care Companies & Educational Institutions. I enjoy working in a team and building innovative products.",
+    ],
     interests: [
       "Photography",
       "Filmmaking",
@@ -16,6 +21,14 @@ module.exports = {
     ],
   },
   skillset: {
+    core: [
+      "JavaScript (ES6)",
+      "HTML5",
+      "CSS3",
+      "React",
+      "React Native",
+      "Node.JS",
+    ],
     languages: [
       "JavaScript",
       "HTML",
