@@ -1,0 +1,57 @@
+@import "./variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px auto;
+}
+// small screens
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 95vw;
+  }
+}
+
+// large screens
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 50px 0;
+    max-width: 60vw;
+  }
+}
+
+.content {
+  display: grid;
+  // place-items: center;
+  padding: 1rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: $textPrimary;
+    font-family: $fontPrimary;
+  }
+  h2 {
+    font-size: 2rem;
+    color: $textSecondary;
+  }
+  h5 {
+    color: $accentPrimary;
+    font-family: $fontTertiary;
+  }
+  p {
+    font-family: $fontSecondary;
+  }
+}

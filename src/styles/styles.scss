@@ -1,22 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&family=Roboto+Mono:wght@300;400;600&display=swap");
+
 @import "./variables";
-@import "./navbar";
-@import "./theme";
-@import "./scrollbar";
-@import "./button";
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
 :root {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $fontPrimary;
 }
 body {
   color: $textPrimary;
-  background-color: $bgSecondary;
+  background-color: $bgPrimary;
   margin: 0;
   padding: 0;
 }
+
 a {
   color: currentColor;
   text-decoration: none;
 }
+
+.styledButton {
+  border: 1px solid $accentPrimary;
+  color: $accentPrimary;
+}
+
+// @import "./normalize";
+@import "./navbar";
+@import "./container";
+@import "./theme";
+@import "./scrollbar";
+// @import "./button";
