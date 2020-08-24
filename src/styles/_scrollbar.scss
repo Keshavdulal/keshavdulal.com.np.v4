@@ -1,10 +1,12 @@
+@import "./variables";
+
 /* customize scrollbar */
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: $bgPrimary;
 }
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: $accentPrimary;
 }

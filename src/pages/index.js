@@ -20,10 +20,12 @@ const IndexPage = () => (
         </div>
         <ul>
           {portfolio.skillset.core.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li className="styledButtonSecondary" key={skill}>
+              {skill}
+            </li>
           ))}
         </ul>
-        <div className="styledButton">Get in Touch</div>
+        <div className="styledButtonPrimary">Get in Touch</div>
       </div>
     </div>
   </Layout>

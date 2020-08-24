@@ -16,10 +16,51 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 
-.styledButton {
+.styledButtonPrimary {
+  display: inline;
+  margin: 0px 4px 4px 4px;
+  padding: 1rem 2rem;
+  max-width: max-content;
+  border-radius: 2px;
   border: 1px solid $accentPrimary;
   color: $accentPrimary;
+  :hover {
+    cursor: pointer;
+    // background: $accentPrimary;
+  }
+}
+
+.styledButtonSecondary {
+  line-height: 2;
+  display: inline;
+  margin: 4px 4px 4px 0px;
+  padding: 0.2rem 0.6rem;
+  max-width: max-content;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid $textSecondary;
+  color: $textSecondary;
+  // :hover {
+  //   background: $accentPrimary;
+  // }
+}
+
+.styledButtonTertiary {
+  display: inline block;
+  margin: 4px 4px 4px 0px;
+  padding: 0.2rem 0.4rem;
+  max-width: max-content;
+  border-radius: 3px;
+  border: 1px solid $textPrimary;
+  color: $bgPrimary;
+  background: $textPrimary;
+  // :hover {
+  //   background: $accentPrimary;
+  // }
 }
 
 // @import "./normalize";

@@ -3,16 +3,16 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { portfolio } from "../portfolio";
-import WorkExperience from "../components/work-experience";
+import Experience from "../components/experience";
 
 const Experiences = () => (
   <Layout>
     <SEO title="experience" />
     <div className="container">
       <div className="content">
-        <h1>Work Experience_</h1>
+        <h2>Work Experience_</h2>
         {portfolio.workExperiences.map((exp) => (
-          <WorkExperience exp={exp} />
+          <Experience key={exp.durationDetail} exp={exp} />
         ))}
       </div>
     </div>

@@ -1,9 +1,7 @@
 @import "./variables";
 
-/* custom navbar */
 .navbar {
   height: 100%;
-  /* stays in the same places despite of user-scroll */
   position: fixed;
   background-color: $bgSecondary;
   transition: width 200ms ease;
@@ -14,19 +12,10 @@
   overflow: hidden;
   overflow-y: auto;
 
-  .logo {
-    position: absolute;
-    top: 0;
-    margin-top: 1rem;
-  }
   .social-items {
     position: absolute;
     bottom: 0;
     margin-bottom: 1rem;
-  }
-
-  :hover .logo svg {
-    transform: rotate(360deg);
   }
 }
 
@@ -37,10 +26,6 @@
   flex-direction: column;
   align-items: center;
   list-style: none;
-
-  li:last-child {
-    // margin-top: auto;
-  }
 }
 
 .nav-item {
@@ -56,15 +41,6 @@
   height: 5rem;
   text-decoration: none;
   color: $textPrimary;
-  // filter: grayscale(100%) opacity(0.7);
-  transition: $transitionSpeed;
-
-  /* remove color upon hover */
-  :hover {
-    // filter: grayscale(0%) opacity(1);
-    // background: red;
-    // color: white;
-  }
 
   svg {
     width: 2rem;
@@ -79,36 +55,21 @@
   margin-left: 1rem;
 }
 
-/* logo customization */
 .logo {
+  position: absolute;
   top: 0;
+  margin-top: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  font-size: 2rem;
   text-align: center;
   color: $textSecondary;
   background: $bgSecondary;
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
   width: 100%;
-
-  svg {
-    transform: rotate(0deg);
-    transition: transform $transitionSpeed;
-  }
-}
-
-.logo-text {
-  display: inline;
-  position: absolute;
-  // left: -999px;
-  transition: $transitionSpeed;
 }
 
 /* small screens */
 @media only screen and (max-width: 600px) {
   main {
-    /* rem is relative to font-size on root elem. here 16x5=80px */
     margin-left: 0;
     padding: 1rem;
   }
@@ -146,7 +107,6 @@
 /* large screens */
 @media only screen and (min-width: 600px) {
   main {
-    /* rem is relative to font-size on root elem. here 16x5=80px */
     margin-left: $sideBarThickness;
     padding: 1rem;
   }
@@ -154,9 +114,7 @@
   .navbar {
     left: 0;
     top: 0;
-    /* same as margin left of main */
     width: 5rem;
-    /* capture full height of viewport */
     height: 100vh;
   }
 
@@ -166,14 +124,6 @@
 
     .link-text {
       display: inline;
-    }
-
-    .logo svg {
-      // margin-left: 11rem;
-    }
-
-    .logo-text {
-      // left: 0px;
     }
 
     .social-items {

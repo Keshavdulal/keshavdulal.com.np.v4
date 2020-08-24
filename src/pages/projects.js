@@ -1,6 +1,5 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
+// import { library } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
-// import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -11,24 +10,42 @@ const Projects = () => (
     <SEO title="projects" />
     <div className="container">
       <div className="content">
-        <h1>Projects</h1>
-        {portfolio.petProjects.map((project) => (
-          <li>
-            <h2>{project.name}</h2>
-            <p>{project.descrption}</p>
-            <p>
-              {project.technologies.map((tech) => (
-                <span>{tech}</span>
-              ))}
-            </p>
-            <a target="_blank" href={project.github}>
-              Github
-            </a>
-            <a target="_blank" href={project.url}>
-              Demo
-            </a>
-          </li>
-        ))}
+        <h2>Projects_</h2>
+        <ul>
+          {portfolio.petProjects.map((project) => (
+            <li key={project.name}>
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <p>
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="styledButtonSecondary">
+                    {tech}
+                  </span>
+                ))}
+              </p>
+              {project.url && (
+                <a
+                  className="styledButtonTertiary"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit
+                </a>
+              )}
+              {project.github && (
+                <a
+                  className="styledButtonTertiary"
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </Layout>

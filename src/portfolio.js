@@ -7,7 +7,7 @@ import {
   faCode,
   faChess,
   faIdCard,
-  faPaperPlane,
+  // faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(fas, fab);
 
@@ -33,12 +33,12 @@ const navConfig = [
     faName: faIdCard,
     to: "/contact",
   },
-  {
-    name: "Resume",
-    faName: faPaperPlane,
-    to: "https://bit.ly/3iKDOql",
-    targetBlank: true,
-  },
+  // {
+  //   name: "Resume",
+  //   faName: faPaperPlane,
+  //   to: "https://bit.ly/3iKDOql",
+  //   targetBlank: true,
+  // },
 ];
 
 const portfolio = {
@@ -120,28 +120,28 @@ const portfolio = {
   petProjects: [
     {
       name: "Adopt Me",
-      descrption: "Find pets for adoption using Petfinder’s API",
+      description: "Find pets for adoption using Petfinder’s API",
       technologies: ["React"],
-      github: "",
+      github: "https://github.com/Keshavdulal/Adopt-Me",
       url: "",
     },
     {
       name: "Exercise Tracker",
-      descrption: "Track exercise of multiple users",
+      description: "Track exercise of multiple users",
       technologies: ["Mongo", "Express", "React", "Node"],
-      github: "",
+      github: "https://github.com/Keshavdulal/Exercise-tracker",
       url: "",
     },
     {
       name: "JS Games",
-      descrption: "Classic Games using Vanilla JS",
+      description: "Classic Games using Vanilla JS",
       technologies: ["Vanilla JS"],
-      github: "",
-      url: "",
+      github: "https://github.com/Keshavdulal/JS-Games",
+      url: "https://keshavdulal.github.io/JS-Games/",
     },
     {
       name: "2D Mapper",
-      descrption: "2 Dimensional Mapping & Navigation Bot using Arduino",
+      description: "2 Dimensional Mapping & Navigation Bot using Arduino",
       technologies: ["Arduino C"],
       github: "",
       url: "",
@@ -177,7 +177,8 @@ const portfolio = {
         "Django",
         "Rest APIs",
       ],
-      github: "",
+      github: "https://github.com/leapfrogtechnology",
+      url: "https://www.lftechnology.com/",
       projects: [
         "Acustream Ingestion Engine",
         "Bartell Web App Revamp",
@@ -201,7 +202,8 @@ const portfolio = {
       duration: "3 Months",
       durationDetail: "JUN 2016 - AUG 2016",
       technologiesUsed: ["Android Java"],
-      github: "",
+      github: "https://github.com/Gaune-bhyagutta/Awaz",
+      url: "",
       projects: ["Awaz - Musical Instrument Tuner"],
       responsibilities: [
         "Developed Android App (AWAZ) to tune musical instruments",
@@ -222,7 +224,8 @@ const portfolio = {
         "Manangin Networks",
         "Network Security",
       ],
-      github: "",
+      github: "https://github.com/Keshavdulal/bscit-network-security-notes",
+      url: "https://keshavdulal.github.io/bscit-network-security-notes/",
       projects: [""],
       responsibilities: [
         "Taught Computer Networks, Managing Networks & Network Security to Diploma Level for 3 semesters",
@@ -240,6 +243,7 @@ const portfolio = {
       technologiesUsed: [],
       projects: [],
       github: "",
+      url: "https://www.lucideus.com/",
       responsibilities: [
         "Selected for on-site summer internship as a finalist of Hack-x-ploit2013",
         "Trained on Cyber Security Practices, Penetration Testing, Network Security, Kali Linux and pitfalls of using of security tools",

@@ -16,15 +16,55 @@ a {
   text-decoration: none;
 }
 
-.styledButton {
+li {
+  list-style: none;
+}
+
+.styledButtonPrimary {
+  display: inline;
+  margin: 0px 4px 4px 4px;
+  padding: 1rem 2rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 2px;
   border: 1px solid #f44336;
   color: #f44336;
 }
 
-/* custom navbar */
+.styledButtonPrimary :hover {
+  cursor: pointer;
+}
+
+.styledButtonSecondary {
+  line-height: 2;
+  display: inline;
+  margin: 4px 4px 4px 0px;
+  padding: 0.2rem 0.6rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+
+.styledButtonTertiary {
+  display: inline block;
+  margin: 4px 4px 4px 0px;
+  padding: 0.2rem 0.4rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  color: #151515;
+  background: #fff;
+}
+
 .navbar {
   height: 100%;
-  /* stays in the same places despite of user-scroll */
   position: fixed;
   background-color: #202022;
   -webkit-transition: width 200ms ease;
@@ -43,21 +83,10 @@ a {
   overflow-y: auto;
 }
 
-.navbar .logo {
-  position: absolute;
-  top: 0;
-  margin-top: 1rem;
-}
-
 .navbar .social-items {
   position: absolute;
   bottom: 0;
   margin-bottom: 1rem;
-}
-
-.navbar :hover .logo svg {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .navbar-nav {
@@ -94,17 +123,14 @@ a {
   height: 5rem;
   text-decoration: none;
   color: #fff;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  /* remove color upon hover */
 }
 
 .nav-link svg {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 100ms;
+  transition: 100ms;
 }
 
 .link-text {
@@ -112,40 +138,21 @@ a {
   margin-left: 1rem;
 }
 
-/* logo customization */
 .logo {
+  position: absolute;
   top: 0;
+  margin-top: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  font-size: 2rem;
   text-align: center;
   color: #ddd;
   background: #202022;
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
   width: 100%;
-}
-
-.logo svg {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.logo-text {
-  display: inline;
-  position: absolute;
-  -webkit-transition: 500ms;
-  transition: 500ms;
 }
 
 /* small screens */
 @media only screen and (max-width: 600px) {
   main {
-    /* rem is relative to font-size on root elem. here 16x5=80px */
     margin-left: 0;
     padding: 1rem;
   }
@@ -182,16 +189,13 @@ a {
 /* large screens */
 @media only screen and (min-width: 600px) {
   main {
-    /* rem is relative to font-size on root elem. here 16x5=80px */
     margin-left: 16rem;
     padding: 1rem;
   }
   .navbar {
     left: 0;
     top: 0;
-    /* same as margin left of main */
     width: 5rem;
-    /* capture full height of viewport */
     height: 100vh;
   }
   /* expand navbar upon hover & only on large screens*/
@@ -257,16 +261,6 @@ a {
   padding: 1rem;
 }
 
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5 {
-  text-align: left;
-  line-height: 1;
-  margin: 0;
-}
-
 .content h1 {
   font-weight: 600;
   font-size: 3rem;
@@ -311,10 +305,10 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #151515;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #f44336;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,27 +1,20 @@
 import React from "react";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 import { navConfig, portfolio } from "../portfolio";
 
 const Navbar = ({ siteTitle }) => (
   <nav className="navbar">
     <div className="logo">
-      <span className="nav-link">
-        {/* <FontAwesomeIcon icon={faSun} /> */}
-        <span className="link-text logo-text">Dark Mode</span>
-      </span>
+      <FontAwesomeIcon icon={faSun} />
     </div>
 
     <ul className="navbar-nav">
       {navConfig.map((conf) => (
-        <li className="nav-item">
-          <Link
-            to={conf.to}
-            className={
-              conf.name == "Resume" ? "styledButton nav-link" : "nav-link"
-            }
-          >
+        <li key={conf.name} className="nav-item">
+          <Link to={conf.to} className="nav-link">
             <FontAwesomeIcon icon={conf.faName} />
             <span> {conf.name}</span>
           </Link>
@@ -32,9 +25,15 @@ const Navbar = ({ siteTitle }) => (
     <div className="nav-item social-items">
       <span className="media-links">
         {portfolio.socialMedia.map((media) => (
-          <Link target="_blank" to={media.url} className="nav-media-link">
+          <a
+            className="nav-media-link"
+            href={media.url}
+            target="_blank"
+            key={media.faName}
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={media.faName} />
-          </Link>
+          </a>
         ))}
       </span>
     </div>
