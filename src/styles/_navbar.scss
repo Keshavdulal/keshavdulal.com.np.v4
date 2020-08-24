@@ -15,8 +15,44 @@
   .social-items {
     position: absolute;
     bottom: 0;
-    margin-bottom: 1rem;
+    margin: 1rem;
+    width: 16rem;
+
+    .media-links {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-around;
+      :hover {
+        transition: $transitionSpeed;
+        // background: $bgPrimary;
+        color: $accentPrimary;
+      }
+    }
   }
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: $textSecondary;
+  background: $bgSecondary;
+  width: 100%;
+  :hover {
+    transition: $transitionSpeed;
+    transform: scale(1.1);
+    border: 3px solid $accentPrimary;
+  }
+}
+
+.displayPicture {
+  transition: $transitionSpeed;
+  border-radius: 50%;
+  border: 3px solid $textPrimary;
+  width: 40%;
 }
 
 .navbar-nav {
@@ -31,7 +67,9 @@
 .nav-item {
   width: 100%;
   :hover {
+    transition: $transitionSpeed;
     background: $bgPrimary;
+    color: $accentPrimary;
   }
 }
 
@@ -41,30 +79,18 @@
   height: 5rem;
   text-decoration: none;
   color: $textPrimary;
-
+  transition: $transitionSpeed;
   svg {
+    font-size: 1.25rem;
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
-    transition: $transitionSpeed;
   }
 }
 
 .link-text {
   display: none;
   margin-left: 1rem;
-}
-
-.logo {
-  position: absolute;
-  top: 0;
-  margin-top: 3rem;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  color: $textSecondary;
-  background: $bgSecondary;
-  width: 100%;
 }
 
 /* small screens */

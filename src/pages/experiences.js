@@ -7,7 +7,7 @@ import Experience from "../components/experience";
 
 const Experiences = () => (
   <Layout>
-    <SEO title="experience" />
+    <SEO title="Experiences" />
     <div className="container">
       <div className="content">
         <h1>Work Experience_</h1>

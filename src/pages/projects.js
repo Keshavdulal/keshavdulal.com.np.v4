@@ -7,13 +7,13 @@ import { portfolio } from "../portfolio";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas, faHome, faLink } from "@fortawesome/free-solid-svg-icons";
+import { fas, faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(fas, fab);
 
 const Projects = () => (
   <Layout>
-    <SEO title="projects" />
+    <SEO title="Projects" />
     <div className="container">
       <div className="content">
         <h1>Projects_</h1>
