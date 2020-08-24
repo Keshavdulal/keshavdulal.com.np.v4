@@ -43,11 +43,14 @@ const navConfig = [
 
 const portfolio = {
   bio: {
+    intro: "👋 Hi, My name is",
     firstName: "Keshav",
     lastName: "Dulal",
+    outro: "Here are a few technologies I've been working with recently:",
+    email: "keshav.dulal@gmail.com",
     professionTitle: "Frontend Software Engineer",
     location: "Kathmandu, Nepal",
-    slogan: "Building Scalable Technology for upcoming Generations",
+    slogan: "I Build web for the next Generation 🚀",
     description: [
       "I am a Frontend Software Engineer who enjoys building things for web. I specialize in building exceptional websites, applications and everything in between.",
       "I am experienced in building React & Node JS Applications for American Health Care Companies & Educational Institutions. I enjoy working in a team and building innovative products.",

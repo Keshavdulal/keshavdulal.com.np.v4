@@ -5,12 +5,12 @@
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0px auto;
 }
 // small screens
 @media only screen and (max-width: 800px) {
   .container {
     max-width: 95vw;
+    margin-bottom: 4rem;
   }
 }
 
@@ -19,6 +19,7 @@
   .container {
     padding: 50px 0;
     max-width: 60vw;
+    margin: 0px auto;
   }
 }
 

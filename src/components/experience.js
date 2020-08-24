@@ -1,20 +1,26 @@
 import React from "react";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas, faHome, faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+library.add(fas, fab);
+
 export default function Experience({ exp }) {
   return (
-    <div>
+    <div className="bucket experience-bucket">
       <h3>
-        {exp.position} @ {exp.company}
+        <span className="title">{exp.position}</span> @ {exp.company}
       </h3>
       {/* <p>{exp.summary}</p> */}
       <p>{exp.durationDetail}</p>
-      <ul>
+      <p>
         {exp.technologiesUsed.map((tech) => (
-          <li key={tech} className="styledButtonSecondary">
+          <span key={tech} className="styledButtonSecondary">
             {tech}
-          </li>
+          </span>
         ))}
-      </ul>
+      </p>
       {false && (
         <ul>
           {exp.responsibilities.map((resp) => (
@@ -29,7 +35,7 @@ export default function Experience({ exp }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit
+          <FontAwesomeIcon icon={faLink} />
         </a>
       )}
       {exp.github && (
@@ -39,7 +45,7 @@ export default function Experience({ exp }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Github
+          <FontAwesomeIcon icon={["fab", "github"]} />
         </a>
       )}
     </div>

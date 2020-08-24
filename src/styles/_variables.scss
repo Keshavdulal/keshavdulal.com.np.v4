@@ -2,13 +2,16 @@ $transitionSpeed: 100ms;
 
 // Colors
 $textPrimary: #fff;
-$textSecondary: #ddd;
+$textSecondary: #aaa;
+$textLight: rgb(121, 121, 121);
 
 $bgPrimary: #151515;
 $bgSecondary: #202022;
 
-$accentPrimary: #f44336;
-$accentSecondary: #c62828;
+// $accentPrimary: #f44336;
+$accentPrimary: #ff5722;
+$accentDark: #dd2c00;
+$accentLight: #ffccbc;
 
 // Fonts
 $fontPrimary: "Montserrat";

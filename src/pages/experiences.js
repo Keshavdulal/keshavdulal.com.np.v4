@@ -10,9 +10,9 @@ const Experiences = () => (
     <SEO title="experience" />
     <div className="container">
       <div className="content">
-        <h2>Work Experience_</h2>
+        <h1>Work Experience_</h1>
         {portfolio.workExperiences.map((exp) => (
-          <Experience key={exp.durationDetail} exp={exp} />
+          <Experience key={Math.random()} exp={exp} />
         ))}
       </div>
     </div>

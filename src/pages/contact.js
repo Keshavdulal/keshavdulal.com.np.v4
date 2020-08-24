@@ -9,7 +9,7 @@ const Contact = () => (
     <SEO title="contact" />
     <div className="container">
       <div className="content">
-        <h2>Contact_</h2>
+        <h1>Contact_</h1>
         <span>
           If you wish to connect with me, drop me an email - I'm quick when it
           comes to responding to emails.

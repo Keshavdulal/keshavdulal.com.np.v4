@@ -9,23 +9,30 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="container">
       <div className="content">
-        <h5>Hi, I am</h5>
+        <h5>{portfolio.bio.intro}</h5>
         <h1>{portfolio.bio.firstName + ` ` + portfolio.bio.lastName}.</h1>
         <h2>{portfolio.bio.slogan}</h2>
         <div>
           {portfolio.bio.description.map((desc) => (
             <p key={desc}>{desc}</p>
           ))}
-          <p>Here are a few technologies I've been working with recently:</p>
+          <p>{portfolio.bio.outro}</p>
         </div>
-        <ul>
+        <p>
           {portfolio.skillset.core.map((skill) => (
-            <li className="styledButtonSecondary" key={skill}>
+            <span className="styledButtonSecondary" key={skill}>
               {skill}
-            </li>
+            </span>
           ))}
-        </ul>
-        <div className="styledButtonPrimary">Get in Touch</div>
+        </p>
+        <br />
+        <a
+          className="styledButtonPrimary"
+          href={`mailto:${portfolio.bio.email}`}
+          rel="noopener noreferrer"
+        >
+          Get in Touch
+        </a>
       </div>
     </div>
   </Layout>

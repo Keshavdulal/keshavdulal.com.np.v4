@@ -1,0 +1,40 @@
+@import "./variables";
+
+.styledButtonPrimary {
+  display: inline;
+  margin: 0px 4px 4px 4px;
+  padding: 1rem 2rem;
+  max-width: max-content;
+  border-radius: 2px;
+  border: 1px solid $accentPrimary;
+  color: $accentPrimary;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.styledButtonSecondary {
+  text-transform: uppercase;
+  line-height: 2;
+  display: inline-block;
+  margin: 4px 4px 4px 0px;
+  padding: 0.2rem 0.6rem;
+  max-width: max-content;
+  font-size: 0.8rem;
+  font-family: $fontTertiary;
+  color: $textSecondary;
+  border-radius: 6px;
+  border: 1px solid $textSecondary;
+}
+
+.styledButtonTertiary {
+  display: inline block;
+  margin: 4px 4px 4px 0px;
+  padding: 0.2rem 0.4rem;
+  max-width: max-content;
+  color: $textPrimary;
+  background: $bgPrimary;
+  :hover {
+    color: $accentPrimary;
+  }
+}

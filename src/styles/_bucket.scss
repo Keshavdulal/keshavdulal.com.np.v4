@@ -1,0 +1,18 @@
+@import "./variables";
+
+.bucket {
+  border-top: 1px dashed $textLight;
+  padding-bottom: 2rem;
+
+  .title {
+    color: $accentPrimary;
+  }
+
+  div:first-child {
+    border-top: none;
+  }
+}
+// .experience-bucket {
+// }
+// .project-bucket {
+// }
