@@ -43,7 +43,7 @@ li {
 .navbar .social-items {
   position: absolute;
   bottom: 0;
-  margin: 1rem;
+  margin-bottom: 1rem;
   width: 16rem;
 }
 
