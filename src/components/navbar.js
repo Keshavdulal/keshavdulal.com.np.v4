@@ -47,7 +47,7 @@ const Navbar = ({ siteTitle }) => {
         <span className="media-links">
           {portfolio.socialMedia.map((media) => (
             <a
-              className="nav-item nav-media-link"
+              className="nav-media-link"
               href={media.url}
               target="_blank"
               key={media.faName}

@@ -50,10 +50,10 @@ const portfolio = {
     email: "keshav.dulal@gmail.com",
     professionTitle: "Frontend Software Engineer",
     location: "Kathmandu, Nepal",
-    slogan: "I Build web for the next Generation 🚀",
+    slogan: "Building web for the coming Generation 🚀",
     description: [
-      "I am a Frontend Software Engineer who enjoys building things for web. I specialize in building exceptional websites, applications and everything in between.",
-      "I am experienced in building React & Node JS Applications for American Health Care Companies & Educational Institutions. I enjoy working in a team and building innovative products.",
+      "I am a Frontend Software Engineer who enjoys building things for web. I specialize in building Frontend of Web applications, while I ocassionally dabble around backend and game development.",
+      "I have experienc building React & Node JS Applications for American Health Care Companies & Educational Institutions. I enjoy working in a team and making innovative products.",
     ],
     interests: [
       "Photography",
