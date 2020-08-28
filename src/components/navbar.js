@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 import { navConfig, portfolio } from "../portfolio";
+import SocialMedia from "./social-media";
 
 const Navbar = ({ siteTitle }) => {
   const displayPicture = useStaticQuery(graphql`
@@ -19,8 +19,6 @@ const Navbar = ({ siteTitle }) => {
       }
     }
   `);
-
-  // console.log(displayPicture, displayPicture.allFile.edges[0].node.publicURL);
 
   return (
     <nav className="navbar">
@@ -43,21 +41,7 @@ const Navbar = ({ siteTitle }) => {
         ))}
       </ul>
 
-      <div className="social-items">
-        <span className="media-links">
-          {portfolio.socialMedia.map((media) => (
-            <a
-              className="nav-media-link"
-              href={media.url}
-              target="_blank"
-              key={media.faName}
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={media.faName} />
-            </a>
-          ))}
-        </span>
-      </div>
+      <SocialMedia />
     </nav>
   );
 };

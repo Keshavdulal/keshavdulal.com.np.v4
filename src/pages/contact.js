@@ -1,9 +1,9 @@
 import React from "react";
-// import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { portfolio } from "../portfolio";
+import SocialMedia from "../components/social-media";
 
 const Contact = () => (
   <Layout>
@@ -11,10 +11,12 @@ const Contact = () => (
     <div className="container">
       <div className="content">
         <h1>Contact_</h1>
-        <span>
-          If you wish to connect with me, drop me an email - I'm quick when it
-          comes to responding to emails.
-        </span>
+        <p>
+          If you wish to connect with me, drop me an email at
+          keshav.dulal@gmail.com
+          <br />
+          I'm quick when it comes to responding to emails.
+        </p>
         <br />
         <a
           className="styledButtonPrimary"
@@ -23,6 +25,11 @@ const Contact = () => (
         >
           Get in Touch
         </a>
+
+        <div>
+          <p>You could also find me in these platforms.</p>
+          <SocialMedia className="contact-page" style={{ display: "block" }} />
+        </div>
       </div>
     </div>
   </Layout>
