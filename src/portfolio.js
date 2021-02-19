@@ -24,8 +24,8 @@ const navConfig = [
   },
   {
     name: "Experiences",
-    // faName: faHiking,
-    faName: faArchive,
+    faName: faHiking,
+    // faName: faArchive,
     to: "/experiences",
   },
   {
@@ -54,12 +54,12 @@ const portfolio = {
     lastName: "Dulal",
     outro: "Here are a few technologies I've been working with recently:",
     email: "keshav.dulal@gmail.com",
-    professionTitle: "Frontend Software Engineer",
+    professionTitle: "FullStack Software Engineer",
     location: "Kathmandu, Nepal",
     slogan: "Building web for the coming Generation 🚀",
     description: [
-      "I am a Frontend Software Engineer who enjoys building things for web. I specialize in building Frontend of Web applications, while I ocassionally dabble around backend and game development.",
-      "I have experienc building React & Node JS Applications for American Health Care Companies & Educational Institutions. I enjoy working in a team and making innovative products.",
+      "I am a FullStack Software Engineer who enjoys building things for web. I specialize in building Frontend of Web and Mobile applications, while I ocassionally dabblling around backend.",
+      "I have experience in building Enterprise Applications in React & Node JS for American Health Care Companies & Educational Institutions. I enjoy working in a team and making innovative products.",
     ],
     interests: [
       "Photography",
@@ -73,12 +73,13 @@ const portfolio = {
   },
   skillset: {
     core: [
+      "React",
+      "React Native",
+      "Material-UI",
+      "Node.JS",
       "JavaScript (ES6)",
       "HTML5",
       "CSS3",
-      "React",
-      "React Native",
-      "Node.JS",
     ],
     languages: [
       "JavaScript",
@@ -94,6 +95,8 @@ const portfolio = {
       "React",
       "React Native",
       "Redux",
+      "Material-UI",
+      "Socket.io",
       "Gatsby",
       "D3",
       "jQuery",
