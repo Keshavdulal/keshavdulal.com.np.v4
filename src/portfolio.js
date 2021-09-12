@@ -11,11 +11,10 @@ import {
   faChess,
   faIdCard,
   faHiking,
-  // faPaperPlane,
+  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(fas, fab);
 
-// todo migrate navconfig somewhere
 const navConfig = [
   {
     name: "Home",
@@ -25,7 +24,6 @@ const navConfig = [
   {
     name: "Experiences",
     faName: faHiking,
-    // faName: faArchive,
     to: "/experiences",
   },
   {
@@ -35,7 +33,6 @@ const navConfig = [
   },
   {
     name: "Contact",
-    // faName: faAt,
     faName: faEnvelope,
     to: "/contact",
   },
@@ -45,6 +42,12 @@ const navConfig = [
   //   to: "https://bit.ly/3iKDOql",
   //   targetBlank: true,
   // },
+  {
+    name: "YOUR_AVERAGE_PROGRAMMER",
+    faName: faPaperPlane,
+    to: "https://www.youtube.com/channel/UC19U_d3EDdiwBw_P5Md1WGg",
+    targetBlank: true,
+  },
 ];
 
 const portfolio = {
@@ -77,16 +80,18 @@ const portfolio = {
       "React Native",
       "Redux",
       "Material-UI",
-      "Node.JS",
+      "Tailwind",
+      "Node",
       "Express",
-      "JavaScript (ES6)",
-      "TypeScript",
       "Semantic HTML",
       "CSS",
+      "SASS",
       "Firebase",
+      "WordPress",
     ],
     languages: [
       "JavaScript",
+      "TypeScript",
       "HTML",
       "CSS",
       "Python",
@@ -151,7 +156,6 @@ const portfolio = {
         "Chakra",
       ],
       github: "https://github.com/Keshavdulal/kredit",
-      // url: "https://keshavdulal.github.io/kredit/",
     },
     {
       name: "Spiral v0.1",
@@ -197,36 +201,28 @@ const portfolio = {
     },
   ],
   workExperiences: [
-    // {
-    //   position: "",
-    //   company: "​",
-    //   location: "",
-    //   summary: "",
-    //   duration: "",
-    //   durationDetail: "",
-    //   technologiesUsed: [],
-    //   projects: [],
-    //   github:"",
-    //   responsibilities: [],
-    // },
-    // {
-    //   position: "Software Engineer",
-    //   company: "​Yarsha Tech",
-    //   location: "Kathmandu, Nepal",
-    //   summary: "Worked on multi-tenant ERP applicaiton development",
-    //   duration: "8 Months + ",
-    //   durationDetail: "AUG 2020 - Present",
-    //   technologiesUsed: [
-    //     "React",
-    //     "Redux",
-    //     "React Table",
-    //     "Material-UI",
-    //     "React Hook Forms",
-    //   ],
-    //   projects: ["WebSchool", "EdSeed"],
-    //   // github:"",
-    //   responsibilities: ["Lead frontend application development"],
-    // },
+    {
+      position: "Remote Software Engineer",
+      company: "Ingamana",
+      location: "Buenos Aires, Argentina",
+      summary: "Building ",
+      duration: "5 Months",
+      durationDetail: "MAY 2021 - Current",
+      technologiesUsed: [
+        "NextJS",
+        "Tailwind",
+        "GraphQL",
+        "WordPress",
+        "WPEngine",
+      ],
+      projects: ["Undisclosed"],
+      url: "https://ingamana.com/",
+      responsibilities: [
+        "Static Site Development",
+        "Site Responsiveness",
+        "Performance Optimization",
+      ],
+    },
     {
       position: "Software Engineer",
       company: "Asterdio Inc",
@@ -240,32 +236,12 @@ const portfolio = {
         "Node",
         "Express",
         "PostGreSQL",
-        // "Django",
         "Rest APIs",
       ],
       projects: ["Dailo Dailo Ma"],
-      // github: "",
       url: "https://asterdio.com/",
       responsibilities: ["React / React Native Application Development"],
     },
-    // {
-    //   position: "Digital Nomad",
-    //   company: "​WAY360 Digital // @Nepal8thWonder Media // @VANA Media",
-    //   location: "Kathmanud, Nepal",
-    //   summary: "Worked on a number of startup companies",
-    //   duration: "2 Years",
-    //   durationDetail: "AUG 2018 - AUG 2020",
-    //   technologiesUsed: ["FCPX", "PhotoShop", "LightRoom", "LRTimelapse"],
-    //   projects: [],
-    //   github: "https://github.com/Adventures-kd",
-    //   url: "https://vana.com.np/",
-    //   responsibilities: [
-    //     "Project Planning & Manangement",
-    //     "Public Relations",
-    //     "Filmmaking",
-    //     "Video Production",
-    //   ],
-    // },
     {
       position: "Software Engineer",
       company: "​Leapfrog Technology Inc.",
