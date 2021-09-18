@@ -78,6 +78,7 @@ const portfolio = {
     core: [
       "React",
       "React Native",
+      "Next",
       "Redux",
       "Material-UI",
       "Tailwind",
